@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="button-image.css" />
+    <link rel="stylesheet" href="button.css" />
+    <link rel="stylesheet" href="page8.css" />
+    <title>Javascript 20</title>
+  </head>
+  <body>
+    <script src="js/automaticpages.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/exercises/20.js"></script>
+
+    <div class="header">
+      <div class="header-left"><h1>Javascript 20</h1></div>
+      <div class="header-right"><h1 id="header-clock">--:--:--</h1></div>
+      <script>
+        updateClock();
+      </script>
+    </div>
+
+    <div class="row">
+      <div class="col-3 col-s-3 menu">
+        <ul id="pages">
+          <a href="index.html"><li>Javascript 1-2</li></a>
+          <a href="page1.html"><li>Javascript 3-6</li></a>
+          <a href="page2.html"><li>Javascript 7-10</li></a>
+          <a href="page3.html"><li>Javascript 11-12</li></a>
+          <a href="page4.html"><li>Javascript 13</li></a>
+          <a href="page5.html"><li>Javascript 14-17</li></a>
+          <a href="page6.html"><li>Javascript 18</li></a>
+          <a href="page7.html"><li>Javascript 19</li></a>
+          <a href="page8.html"><li>Javascript 20</li></a>
+          <a href="page9.html"><li>Javascript 21</li></a>
+        </ul>
+      </div>
+
+      <div class="col-9 col-s-9">
+        <h1>Tehtävä 20</h1>
+        <p>Avaa teksti laatikon ja varmistaa, että email on kentässä</p>
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="
+            background: #f0f0f0;
+            overflow: auto;
+            width: auto;
+            border: solid gray;
+            border-width: 0.1em 0.1em 0.1em 0.8em;
+            padding: 0.2em 0.6em;
+          "
+        >
+          <table>
+            <tr>
+              <td>
+                <pre style="margin: 0; line-height: 125%">
+ 1
+  2
+  3
+  4
+  5
+  6
+  7
+  8
+  9
+ 10
+ 11
+ 12
+ 13
+ 14
+ 15
+ 16
+ 17
+ 18</pre
+                >
+              </td>
+              <td>
+                <pre
+                  style="margin: 0; line-height: 125%"
+                >      <span style="color: #062873; font-weight: bold">&lt;div</span> <span style="color: #4070a0">class=&quot;col-9 col-s-9&quot;</span><span style="color: #062873; font-weight: bold">&gt;</span>
+         <span style="color: #062873; font-weight: bold">&lt;form</span> <span style="color: #4070a0">name=&quot;omaEmail&quot;</span> <span style="color: #4070a0">onsubmit=&quot;return ex20()&quot;</span><span style="color: #062873; font-weight: bold">&gt;</span>
+           E-Mail:
+           <span style="color: #062873; font-weight: bold">&lt;input</span> <span style="color: #4070a0">type=&quot;text&quot;</span> <span style="color: #4070a0">name=&quot;email&quot;</span> <span style="color: #062873; font-weight: bold">/&gt;</span>
+           <span style="color: #062873; font-weight: bold">&lt;input</span> <span style="color: #4070a0">type=&quot;submit&quot;</span> <span style="color: #4070a0">value=&quot;Lähetä&quot;</span> <span style="color: #062873; font-weight: bold">/&gt;</span>
+         <span style="color: #062873; font-weight: bold">&lt;/form&gt;</span>
+         <span style="color: #062873; font-weight: bold">&lt;div</span> <span style="color: #4070a0">id=&quot;teht1&quot;</span> <span style="color: #4070a0">class=&quot;tehtava&quot;</span> <span style="color: #4070a0">onclick=&quot;ex20b()&quot;</span><span style="color: #062873; font-weight: bold">&gt;</span>
+           <span style="color: #062873; font-weight: bold">&lt;span</span> <span style="color: #4070a0">class=&quot;tehtavaTeksti&quot;</span> <span style="color: #4070a0">id=&quot;omaTeht_teksti_1&quot;</span><span style="color: #062873; font-weight: bold">&gt;</span>
+             <span style="color: #062873; font-weight: bold">&lt;h3&gt;</span>Tehtävän otsikko<span style="color: #062873; font-weight: bold">&lt;/h3&gt;</span>
+             HTML-elementti <span style="color: #062873; font-weight: bold">&lt;i&gt;</span>span<span style="color: #062873; font-weight: bold">&lt;/i&gt;</span> ei ole parhain tapa tuottaa laatikkoon
+             tekstiä.<span style="color: #062873; font-weight: bold">&lt;br</span> <span style="color: #062873; font-weight: bold">/&gt;</span>
+             Ongelma, rivinvaihdot joutuu tekemään <span style="color: #062873; font-weight: bold">&lt;i&gt;</span>br<span style="color: #062873; font-weight: bold">&lt;/i&gt;</span>-elementillä
+             haluttuihin kohtiin.<span style="color: #062873; font-weight: bold">&lt;br</span> <span style="color: #062873; font-weight: bold">/&gt;</span>
+             Parempi vaihto-ehto voi olla CSS-ohjeilla muotoiltu
+             <span style="color: #062873; font-weight: bold">&lt;i&gt;</span>pre<span style="color: #062873; font-weight: bold">&lt;/i&gt;</span>-elementti.<span style="color: #062873; font-weight: bold">&lt;br</span>
+           <span style="color: #062873; font-weight: bold">/&gt;&lt;/span&gt;</span>
+         <span style="color: #062873; font-weight: bold">&lt;/div&gt;</span>
+       <span style="color: #062873; font-weight: bold">&lt;/div&gt;</span>
+ </pre>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="
+            background: #f0f0f0;
+            overflow: auto;
+            width: auto;
+            border: solid gray;
+            border-width: 0.1em 0.1em 0.1em 0.8em;
+            padding: 0.2em 0.6em;
+          "
+        >
+          <table>
+            <tr>
+              <td>
+                <pre style="margin: 0; line-height: 125%">
+ 1
+  2
+  3
+  4
+  5
+  6
+  7
+  8
+  9
+ 10
+ 11
+ 12
+ 13
+ 14
+ 15</pre
+                >
+              </td>
+              <td>
+                <pre
+                  style="margin: 0; line-height: 125%"
+                ><span style="color: #007020; font-weight: bold">function</span> ex20() {
+   <span style="color: #007020; font-weight: bold">var</span> x <span style="color: #666666">=</span> <span style="color: #007020">document</span>.forms[<span style="color: #4070a0">&quot;omaEmail&quot;</span>][<span style="color: #4070a0">&quot;email&quot;</span>].value;
+   <span style="color: #007020; font-weight: bold">if</span> (x <span style="color: #666666">==</span> <span style="color: #4070a0">&quot;&quot;</span>) {
+     alert(<span style="color: #4070a0">&quot;Oma email puuttuu. Ole hyvä, anna email.&quot;</span>);
+     <span style="color: #007020; font-weight: bold">return</span> <span style="color: #007020; font-weight: bold">false</span>;
+   }
+ 
+   ex20b();
+   <span style="color: #007020; font-weight: bold">return</span> <span style="color: #007020; font-weight: bold">false</span>;
+ }
+ 
+ <span style="color: #007020; font-weight: bold">function</span> ex20b() {
+   <span style="color: #007020; font-weight: bold">var</span> popup <span style="color: #666666">=</span> <span style="color: #007020">document</span>.getElementById(<span style="color: #4070a0">&quot;omaTeht_teksti_1&quot;</span>);
+   popup.classList.toggle(<span style="color: #4070a0">&quot;show&quot;</span>);
+ }
+ </pre>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <form name="omaEmail" onsubmit="return ex20()">
+          E-Mail:
+          <input type="text" name="email" />
+          <input type="submit" value="Lähetä" />
+        </form>
+        <div id="teht1" class="tehtava" onclick="ex20b()">
+          <span class="tehtavaTeksti" id="omaTeht_teksti_1">
+            <h3>Tehtävän otsikko</h3>
+            HTML-elementti <i>span</i> ei ole parhain tapa tuottaa laatikkoon
+            tekstiä.<br />
+            Ongelma, rivinvaihdot joutuu tekemään <i>br</i>-elementillä
+            haluttuihin kohtiin.<br />
+            Parempi vaihto-ehto voi olla CSS-ohjeilla muotoiltu
+            <i>pre</i>-elementti.<br
+          /></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>
+        This collection of beautiful and breathtaking photos is free for
+        personal and commercial use.
+      </p>
+    </div>
+  </body>
+</html>

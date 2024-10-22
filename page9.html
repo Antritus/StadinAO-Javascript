@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="button-image.css" />
+    <link rel="stylesheet" href="button.css" />
+    <link rel="stylesheet" href="page9.css" />
+    <title>Javascript 21</title>
+  </head>
+  <body>
+    <script src="js/automaticpages.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/exercises/21.js"></script>
+
+    <div class="header">
+      <div class="header-left"><h1>Javascript 21</h1></div>
+      <div class="header-right"><h1 id="header-clock">--:--:--</h1></div>
+      <script>
+        updateClock();
+      </script>
+    </div>
+
+    <div class="row">
+      <div class="col-3 col-s-3 menu">
+        <ul id="pages">
+          <a href="index.html"><li>Javascript 1-2</li></a>
+          <a href="page1.html"><li>Javascript 3-6</li></a>
+          <a href="page2.html"><li>Javascript 7-10</li></a>
+          <a href="page3.html"><li>Javascript 11-12</li></a>
+          <a href="page4.html"><li>Javascript 13</li></a>
+          <a href="page5.html"><li>Javascript 14-17</li></a>
+          <a href="page6.html"><li>Javascript 18</li></a>
+          <a href="page7.html"><li>Javascript 19</li></a>
+          <a href="page8.html"><li>Javascript 20</li></a>
+          <a href="page9.html"><li>Javascript 21</li></a>
+        </ul>
+      </div>
+      <div class="col-9 col-s-9">
+        <h1>Tehtävä 21</h1>
+        <p>
+          Näyttää kolmessa eri kohtaa neliön, jonka päälle voi mennä hiirellä
+          niin laatikko näyttää infoa.
+        </p>
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="
+            background: #f0f0f0;
+            overflow: auto;
+            width: auto;
+            border: solid gray;
+            border-width: 0.1em 0.1em 0.1em 0.8em;
+            padding: 0.2em 0.6em;
+          "
+        >
+          <table>
+            <tr>
+              <td>
+                <pre style="margin: 0; line-height: 125%">
+ 1
+  2
+  3
+  4
+  5
+  6
+  7
+  8
+  9
+ 10
+ 11
+ 12
+ 13
+ 14
+ 15
+ 16
+ 17
+ 18
+ 19
+ 20
+ 21
+ 22
+ 23</pre
+                >
+              </td>
+              <td>
+                <pre
+                  style="margin: 0; line-height: 125%"
+                >      <span style="color: #062873; font-weight: bold">&lt;div</span> <span style="color: #4070a0">class=&quot;col-9 col-s-9&quot;</span><span style="color: #062873; font-weight: bold">&gt;</span>
+         <span style="color: #062873; font-weight: bold">&lt;div</span> <span style="color: #4070a0">id=&quot;pariisi&quot;</span> <span style="color: #4070a0">style=&quot;position: relative&quot;</span><span style="color: #062873; font-weight: bold">&gt;</span>
+           <span style="color: #062873; font-weight: bold">&lt;img</span> <span style="color: #4070a0">id=&quot;pariisi-kuva&quot;</span> <span style="color: #4070a0">src=&quot;paris.jpg&quot;</span> <span style="color: #062873; font-weight: bold">/&gt;</span>
+ 
+           <span style="color: #60a0b0; font-style: italic">&lt;!-- Torni --&gt;</span>
+           <span style="color: #062873; font-weight: bold">&lt;div</span> <span style="color: #4070a0">class=&quot;teksti-alue&quot;</span> <span style="color: #4070a0">id=&quot;torni&quot;</span><span style="color: #062873; font-weight: bold">&gt;&lt;/div&gt;</span>
+           <span style="color: #062873; font-weight: bold">&lt;div</span> <span style="color: #4070a0">class=&quot;info&quot;</span> <span style="color: #4070a0">id=&quot;torni-info&quot;</span><span style="color: #062873; font-weight: bold">&gt;</span>TORNI TOSI VANHA<span style="color: #062873; font-weight: bold">&lt;/div&gt;</span>
+ 
+           <span style="color: #60a0b0; font-style: italic">&lt;!-- Silta --&gt;</span>
+           <span style="color: #062873; font-weight: bold">&lt;div</span> <span style="color: #4070a0">class=&quot;teksti-alue&quot;</span> <span style="color: #4070a0">id=&quot;silta&quot;</span><span style="color: #062873; font-weight: bold">&gt;&lt;/div&gt;</span>
+           <span style="color: #062873; font-weight: bold">&lt;div</span> <span style="color: #4070a0">class=&quot;info&quot;</span> <span style="color: #4070a0">id=&quot;silta-info&quot;</span><span style="color: #062873; font-weight: bold">&gt;</span>SILTA TODELLA KALLIS<span style="color: #062873; font-weight: bold">&lt;/div&gt;</span>
+ 
+           <span style="color: #60a0b0; font-style: italic">&lt;!-- Vene --&gt;</span>
+           <span style="color: #062873; font-weight: bold">&lt;div</span> <span style="color: #4070a0">class=&quot;teksti-alue&quot;</span> <span style="color: #4070a0">id=&quot;vene&quot;</span><span style="color: #062873; font-weight: bold">&gt;&lt;/div&gt;</span>
+           <span style="color: #062873; font-weight: bold">&lt;div</span> <span style="color: #4070a0">class=&quot;info&quot;</span> <span style="color: #4070a0">id=&quot;vene-info&quot;</span><span style="color: #062873; font-weight: bold">&gt;</span>
+             Todella kalliin näköisiä veneitä
+           <span style="color: #062873; font-weight: bold">&lt;/div&gt;</span>
+         <span style="color: #062873; font-weight: bold">&lt;/div&gt;</span>
+ 
+         <span style="color: #062873; font-weight: bold">&lt;script&gt;</span>
+           ex21();
+         <span style="color: #062873; font-weight: bold">&lt;/script&gt;</span>
+       <span style="color: #062873; font-weight: bold">&lt;/div&gt;</span>
+ </pre>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="
+            background: #f0f0f0;
+            overflow: auto;
+            width: auto;
+            border: solid gray;
+            border-width: 0.1em 0.1em 0.1em 0.8em;
+            padding: 0.2em 0.6em;
+          "
+        >
+          <table>
+            <tr>
+              <td>
+                <pre style="margin: 0; line-height: 125%">
+ 1
+  2
+  3
+  4
+  5
+  6
+  7
+  8
+  9
+ 10</pre
+                >
+              </td>
+              <td>
+                <pre
+                  style="margin: 0; line-height: 125%"
+                ><span style="color: #007020; font-weight: bold">function</span> ex21() {
+   <span style="color: #007020; font-weight: bold">const</span> squares <span style="color: #666666">=</span> <span style="color: #007020">document</span>.querySelectorAll(<span style="color: #4070a0">&quot;.teksti-alue&quot;</span>);
+   squares.forEach((square) <span style="color: #666666">=&gt;</span> {
+     square.addEventListener(<span style="color: #4070a0">&quot;click&quot;</span>, <span style="color: #007020; font-weight: bold">function</span> () {
+       <span style="color: #007020; font-weight: bold">const</span> infoBox <span style="color: #666666">=</span> <span style="color: #007020; font-weight: bold">this</span>.nextElementSibling;
+       infoBox.style.display <span style="color: #666666">=</span>
+         infoBox.style.display <span style="color: #666666">===</span> <span style="color: #4070a0">&quot;block&quot;</span> <span style="color: #666666">?</span> <span style="color: #4070a0">&quot;none&quot;</span> <span style="color: #666666">:</span> <span style="color: #4070a0">&quot;block&quot;</span>;
+     });
+   });
+ }
+ </pre>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <div id="pariisi" style="position: relative">
+          <img id="pariisi-kuva" src="paris.jpg" />
+
+          <!-- Torni -->
+          <div class="teksti-alue" id="torni"></div>
+          <div class="info" id="torni-info">TORNI TOSI VANHA</div>
+
+          <!-- Silta -->
+          <div class="teksti-alue" id="silta"></div>
+          <div class="info" id="silta-info">SILTA TODELLA KALLIS</div>
+
+          <!-- Vene -->
+          <div class="teksti-alue" id="vene"></div>
+          <div class="info" id="vene-info">
+            Todella kalliin näköisiä veneitä
+          </div>
+        </div>
+
+        <script>
+          ex21();
+        </script>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>
+        This collection of beautiful and breathtaking photos is free for
+        personal and commercial use.
+      </p>
+    </div>
+  </body>
+</html>

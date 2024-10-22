@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="button-image.css" />
+    <link rel="stylesheet" href="button.css" />
+    <title>Javascript 18</title>
+  </head>
+  <body>
+    <script src="js/automaticpages.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/exercises/18.js"></script>
+
+    <div class="header">
+      <div class="header-left"><h1>Javascript 18</h1></div>
+      <div class="header-right"><h1 id="header-clock">--:--:--</h1></div>
+      <script>
+        updateClock();
+      </script>
+    </div>
+
+    <div class="row">
+      <div class="col-3 col-s-3 menu">
+        <ul id="pages">
+          <a href="index.html"><li>Javascript 1-2</li></a>
+          <a href="page1.html"><li>Javascript 3-6</li></a>
+          <a href="page2.html"><li>Javascript 7-10</li></a>
+          <a href="page3.html"><li>Javascript 11-12</li></a>
+          <a href="page4.html"><li>Javascript 13</li></a>
+          <a href="page5.html"><li>Javascript 14-17</li></a>
+          <a href="page6.html"><li>Javascript 18</li></a>
+          <a href="page7.html"><li>Javascript 19</li></a>
+          <a href="page8.html"><li>Javascript 20</li></a>
+          <a href="page9.html"><li>Javascript 21</li></a>
+        </ul>
+      </div>
+      <div class="col-9 col-s-9">
+        <h1>Tehtävä 18</h1>
+        <p>Lukee objektin tietoa ja näyttää tiedot sivustolla</p>
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="
+            background: #f0f0f0;
+            overflow: auto;
+            width: auto;
+            border: solid gray;
+            border-width: 0.1em 0.1em 0.1em 0.8em;
+            padding: 0.2em 0.6em;
+          "
+        >
+          <table>
+            <tr>
+              <td>
+                <pre style="margin: 0; line-height: 125%">
+1
+2
+3
+4
+5
+6</pre
+                >
+              </td>
+              <td>
+                <pre
+                  style="margin: 0; line-height: 125%"
+                >      <span style="color: #062873; font-weight: bold">&lt;div</span> <span style="color: #4070a0">class=&quot;col-9 col-s-9&quot;</span><span style="color: #062873; font-weight: bold">&gt;</span>
+        <span style="color: #062873; font-weight: bold">&lt;h1</span> <span style="color: #4070a0">id=&quot;object&quot;</span><span style="color: #062873; font-weight: bold">&gt;</span>A<span style="color: #062873; font-weight: bold">&lt;/h1&gt;</span>
+        <span style="color: #062873; font-weight: bold">&lt;script&gt;</span>
+          ex18();
+        <span style="color: #062873; font-weight: bold">&lt;/script&gt;</span>
+      <span style="color: #062873; font-weight: bold">&lt;/div&gt;</span>
+</pre>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="
+            background: #f0f0f0;
+            overflow: auto;
+            width: auto;
+            border: solid gray;
+            border-width: 0.1em 0.1em 0.1em 0.8em;
+            padding: 0.2em 0.6em;
+          "
+        >
+          <table>
+            <tr>
+              <td>
+                <pre style="margin: 0; line-height: 125%">
+1
+  2
+  3
+  4
+  5</pre
+                >
+              </td>
+              <td>
+                <pre
+                  style="margin: 0; line-height: 125%"
+                ><span style="color: #007020; font-weight: bold">function</span> ex18() {
+    <span style="color: #007020; font-weight: bold">let</span> object <span style="color: #666666">=</span> { firstName<span style="color: #666666">:</span> <span style="color: #4070a0">&quot;Juha&quot;</span>, surname<span style="color: #666666">:</span> <span style="color: #4070a0">&quot;Laakso&quot;</span>, age<span style="color: #666666">:</span> <span style="color: #40a070">104</span> };
+    <span style="color: #007020">document</span>.getElementById(<span style="color: #4070a0">&quot;object&quot;</span>).innerHTML <span style="color: #666666">=</span>
+      object[<span style="color: #4070a0">&quot;firstName&quot;</span>] <span style="color: #666666">+</span> <span style="color: #4070a0">&quot; &quot;</span> <span style="color: #666666">+</span> object[<span style="color: #4070a0">&quot;surname&quot;</span>] <span style="color: #666666">+</span> <span style="color: #4070a0">&quot; &quot;</span> <span style="color: #666666">+</span> object[<span style="color: #4070a0">&quot;age&quot;</span>];
+  }
+  </pre>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <h1 id="object">A</h1>
+        <script>
+          ex18();
+        </script>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>
+        This collection of beautiful and breathtaking photos is free for
+        personal and commercial use.
+      </p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="button-image.css" />
+    <link rel="stylesheet" href="button.css" />
+    <title>Javascript 7-10</title>
+  </head>
+  <body>
+    <script src="js/automaticpages.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/exercises/7-10.js"></script>
+
+    <div class="header">
+      <div class="header-left"><h1>Javascript Javascript 7-10</h1></div>
+      <div class="header-right"><h1 id="header-clock">--:--:--</h1></div>
+      <script>
+        updateClock();
+      </script>
+    </div>
+
+    <div class="row">
+      <div class="col-3 col-s-3 menu">
+        <ul id="pages">
+          <a href="index.html"><li>Javascript 1-2</li></a>
+          <a href="page1.html"><li>Javascript 3-6</li></a>
+          <a href="page2.html"><li>Javascript 7-10</li></a>
+          <a href="page3.html"><li>Javascript 11-12</li></a>
+          <a href="page4.html"><li>Javascript 13</li></a>
+          <a href="page5.html"><li>Javascript 14-17</li></a>
+          <a href="page6.html"><li>Javascript 18</li></a>
+          <a href="page7.html"><li>Javascript 19</li></a>
+          <a href="page8.html"><li>Javascript 20</li></a>
+          <a href="page9.html"><li>Javascript 21</li></a>
+        </ul>
+      </div>
+
+      <div class="col-9 col-s-9">
+        <h1>Tehtävä 7</h1>
+        <p>Laskee rinnan ja sarjaan 3 vastusta javascriptin avulla</p>
+
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="
+            background: #f0f0f0;
+            overflow: auto;
+            width: auto;
+            border: solid gray;
+            border-width: 0.1em 0.1em 0.1em 0.8em;
+            padding: 0.2em 0.6em;
+          "
+        >
+          <table>
+            <tr>
+              <td>
+                <pre style="margin: 0; line-height: 125%">
+1
+  2
+  3
+  4
+  5
+  6
+  7</pre
+                >
+              </td>
+              <td>
+                <pre
+                  style="margin: 0; line-height: 125%"
+                >      <span style="color: #062873; font-weight: bold">&lt;div</span> <span style="color: #4070a0">class=&quot;col-9 col-s-9&quot;</span><span style="color: #062873; font-weight: bold">&gt;</span>
+          <span style="color: #062873; font-weight: bold">&lt;p</span> <span style="color: #4070a0">id=&quot;sarjaan&quot;</span><span style="color: #062873; font-weight: bold">&gt;&lt;/p&gt;</span>
+          <span style="color: #062873; font-weight: bold">&lt;p</span> <span style="color: #4070a0">id=&quot;rinnan&quot;</span><span style="color: #062873; font-weight: bold">&gt;&lt;/p&gt;</span>
+          <span style="color: #062873; font-weight: bold">&lt;script&gt;</span>
+            ex8();
+          <span style="color: #062873; font-weight: bold">&lt;/script&gt;</span>
+        <span style="color: #062873; font-weight: bold">&lt;/div&gt;</span>
+  </pre>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="
+            background: #f0f0f0;
+            overflow: auto;
+            width: auto;
+            border: solid gray;
+            border-width: 0.1em 0.1em 0.1em 0.8em;
+            padding: 0.2em 0.6em;
+          "
+        >
+          <table>
+            <tr>
+              <td>
+                <pre style="margin: 0; line-height: 125%">
+ 1
+  2
+  3
+  4
+  5
+  6
+  7
+  8
+  9
+ 10
+ 11
+ 12
+ 13
+ 14
+ 15
+ 16
+ 17
+ 18
+ 19
+ 20
+ 21
+ 22
+ 23
+ 24
+ 25
+ 26
+ 27
+ 28
+ 29</pre
+                >
+              </td>
+              <td>
+                <pre
+                  style="margin: 0; line-height: 125%"
+                ><span style="color: #007020; font-weight: bold">var</span> R1 <span style="color: #666666">=</span> <span style="color: #40a070">100</span>,
+   R2 <span style="color: #666666">=</span> <span style="color: #40a070">70</span>,
+   R3 <span style="color: #666666">=</span> <span style="color: #40a070">25</span>,
+   Rsarja;
+ 
+ <span style="color: #007020; font-weight: bold">function</span> kolmeSarjaan() {
+   Rsarja <span style="color: #666666">=</span> R1 <span style="color: #666666">+</span> R2 <span style="color: #666666">+</span> R3;
+   <span style="color: #007020; font-weight: bold">return</span> Rsarja;
+ }
+ <span style="color: #007020; font-weight: bold">function</span> kolmeRinnan() {
+   Rsarja <span style="color: #666666">=</span> <span style="color: #40a070">1</span> <span style="color: #666666">/</span> (<span style="color: #40a070">1</span> <span style="color: #666666">/</span> R1 <span style="color: #666666">+</span> <span style="color: #40a070">1</span> <span style="color: #666666">/</span> R2 <span style="color: #666666">+</span> <span style="color: #40a070">1</span> <span style="color: #666666">/</span> R3);
+   <span style="color: #007020; font-weight: bold">return</span> Rsarja;
+ }
+ <span style="color: #007020; font-weight: bold">function</span> ex8() {
+   <span style="color: #007020">document</span>.getElementById(
+     <span style="color: #4070a0">&quot;sarjaan&quot;</span>
+   ).innerHTML <span style="color: #666666">=</span> <span style="border: 1px solid #FF0000">`</span>Sarjaan (R1 ${R1}, R2 ${R2}, R3 ${R3})<span style="color: #666666">:</span> ${kolmeSarjaan(
+     R1,
+     R2,
+     R3
+   )}omh<span style="border: 1px solid #FF0000">`</span>;
+   <span style="color: #007020">document</span>.getElementById(
+     <span style="color: #4070a0">&quot;rinnan&quot;</span>
+   ).innerHTML <span style="color: #666666">=</span> <span style="border: 1px solid #FF0000">`</span>Rinnan (R1 ${R1}, R2 ${R2}, R3 ${R3})<span style="color: #666666">:</span> ${kolmeRinnan(
+     R1,
+     R2,
+     R3
+   )}omh<span style="border: 1px solid #FF0000">`</span>;
+ }
+ </pre>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <p id="sarjaan"></p>
+        <p id="rinnan"></p>
+        <script>
+          ex8();
+        </script>
+      </div>
+      <div class="col-3 col-s-3"></div>
+      <div class="col-9 col-s-9">
+        <h1>Tehtävä 8</h1>
+        <p>Laskee pallon pinta-alan ja tilavuuden</p>
+        <!-- HTML generated using hilite.me --><div style="background: #f0f0f0; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%"> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14</pre></td><td><pre style="margin: 0; line-height: 125%">      <span style="color: #062873; font-weight: bold">&lt;div</span> <span style="color: #4070a0">class=&quot;col-9 col-s-9&quot;</span><span style="color: #062873; font-weight: bold">&gt;</span>
+        <span style="color: #062873; font-weight: bold">&lt;h2&gt;</span>Pallon säde<span style="color: #062873; font-weight: bold">&lt;/h2&gt;</span>
+        <span style="color: #062873; font-weight: bold">&lt;input</span>
+          <span style="color: #4070a0">type=&quot;number&quot;</span>
+          <span style="color: #4070a0">value=&quot;103.2&quot;</span>
+          <span style="color: #4070a0">name=&quot;pallonkoko&quot;</span>
+          <span style="color: #4070a0">id=&quot;sadesaadin&quot;</span>
+          <span style="color: #4070a0">oninput=&quot;this.previousSibling.value = `Pallon säde: ${this.value}`&quot;</span>
+        <span style="color: #062873; font-weight: bold">/&gt;</span>
+        <span style="color: #062873; font-weight: bold">&lt;button</span> <span style="color: #4070a0">class=&quot;button-small&quot;</span> <span style="color: #4070a0">onclick=&quot;ex9()&quot;</span><span style="color: #062873; font-weight: bold">&gt;</span>Laske<span style="color: #062873; font-weight: bold">&lt;/button&gt;</span>
+        <span style="color: #062873; font-weight: bold">&lt;br&gt;</span>
+        <span style="color: #062873; font-weight: bold">&lt;p&gt;</span>Pinta-ala: <span style="color: #062873; font-weight: bold">&lt;p</span> <span style="color: #4070a0">id=&quot;pinta-ala&quot;</span><span style="color: #062873; font-weight: bold">&gt;&lt;/p&gt;&lt;/p&gt;</span>
+        <span style="color: #062873; font-weight: bold">&lt;p&gt;</span>Tilavuus: <span style="color: #062873; font-weight: bold">&lt;p</span> <span style="color: #4070a0">id=&quot;tilavuus&quot;</span><span style="color: #062873; font-weight: bold">&gt;&lt;/p&gt;&lt;/p&gt;</span>
+      <span style="color: #062873; font-weight: bold">&lt;/div&gt;</span>
+</pre></td></tr></table></div>
+<!-- HTML generated using hilite.me --><div style="background: #f0f0f0; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%"> 1
+  2
+  3
+  4
+  5
+  6
+  7
+  8
+  9
+ 10
+ 11
+ 12
+ 13
+ 14
+ 15</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #007020; font-weight: bold">function</span> area(size) {
+   <span style="color: #007020; font-weight: bold">return</span> <span style="color: #40a070">4</span> <span style="color: #666666">*</span> <span style="color: #007020">Math</span>.PI <span style="color: #666666">*</span> <span style="color: #007020">Math</span>.pow(size, <span style="color: #40a070">2</span>);
+ }
+ <span style="color: #007020; font-weight: bold">function</span> volume(size) {
+   <span style="color: #007020; font-weight: bold">return</span> (<span style="color: #40a070">4</span> <span style="color: #666666">/</span> <span style="color: #40a070">3</span>) <span style="color: #666666">*</span> <span style="color: #007020">Math</span>.PI <span style="color: #666666">*</span> <span style="color: #007020">Math</span>.pow(size, <span style="color: #40a070">3</span>);
+ }
+ 
+ <span style="color: #007020; font-weight: bold">function</span> ex9() {
+   <span style="color: #007020">document</span>.getElementById(<span style="color: #4070a0">&quot;pinta-ala&quot;</span>).innerHTML <span style="color: #666666">=</span> area(
+     <span style="color: #007020">document</span>.getElementById(<span style="color: #4070a0">&quot;sadesaadin&quot;</span>).value
+   );
+   <span style="color: #007020">document</span>.getElementById(<span style="color: #4070a0">&quot;tilavuus&quot;</span>).innerHTML <span style="color: #666666">=</span> volume(
+     <span style="color: #007020">document</span>.getElementById(<span style="color: #4070a0">&quot;sadesaadin&quot;</span>).value
+   );
+ }
+ </pre></td></tr></table></div>
+ 
+
+        <input
+          type="number"
+          value="103.2"
+          name="pallonkoko"
+          id="sadesaadin"
+          oninput="this.previousSibling.value = `Pallon säde: ${this.value}`"
+        />
+        <button class="button-small" onclick="ex9()">Laske</button>
+        <br>
+        <p>Pinta-ala: <p id="pinta-ala"></p></p>
+        <p>Tilavuus: <p id="tilavuus"></p></p>
+      </div>
+
+      <div class="col-3 col-s-3"></div>
+      <div class="col-9 col-s-9">
+        <h1>Tehtävä 9</h1>
+        <p>Laskee rinnan 3 vastusta</p>
+<!-- HTML generated using hilite.me --><div style="background: #f0f0f0; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%">1
+  2
+  3
+  4</pre></td><td><pre style="margin: 0; line-height: 125%">      <span style="color: #062873; font-weight: bold">&lt;div</span> <span style="color: #4070a0">class=&quot;col-9 col-s-9&quot;</span><span style="color: #062873; font-weight: bold">&gt;</span>
+          <span style="color: #062873; font-weight: bold">&lt;p&gt;</span>Rinnan [10, 10, 23]: <span style="color: #062873; font-weight: bold">&lt;p</span> <span style="color: #4070a0">id=&quot;rinnan-2&quot;</span><span style="color: #062873; font-weight: bold">&gt;&lt;/p&gt;&lt;/p&gt;</span>
+          <span style="color: #062873; font-weight: bold">&lt;script&gt;</span>ex10();<span style="color: #062873; font-weight: bold">&lt;/script&gt;</span>
+        <span style="color: #062873; font-weight: bold">&lt;/div&gt;</span>
+  </pre></td></tr></table></div>
+<!-- HTML generated using hilite.me --><div style="background: #f0f0f0; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%">1
+  2
+  3
+  4
+  5</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #007020; font-weight: bold">function</span> ex10() {
+    <span style="color: #007020; font-weight: bold">let</span> r <span style="color: #666666">=</span> [<span style="color: #40a070">10</span>, <span style="color: #40a070">10</span>, <span style="color: #40a070">23</span>];
+    <span style="color: #007020">document</span>.getElementById(<span style="color: #4070a0">&quot;rinnan-2&quot;</span>).innerHTML <span style="color: #666666">=</span>
+      <span style="color: #40a070">1</span> <span style="color: #666666">/</span> (<span style="color: #40a070">1</span> <span style="color: #666666">/</span> r[<span style="color: #40a070">0</span>] <span style="color: #666666">+</span> <span style="color: #40a070">1</span> <span style="color: #666666">/</span> r[<span style="color: #40a070">1</span>] <span style="color: #666666">+</span> <span style="color: #40a070">1</span> <span style="color: #666666">/</span> r[<span style="color: #40a070">2</span>]) <span style="color: #666666">+</span> <span style="color: #4070a0">&quot;omh&quot;</span>;
+  }
+  </pre></td></tr></table></div>
+  
+  
+        <p>Rinnan [10, 10, 23]: <p id="rinnan-2"></p></p>
+        <script>ex10();</script>
+      </div>
+
+      <div class="col-3 col-s-3"></div>
+      <div class="col-9 col-s-9">
+        <h1>Tehtävä 10</h1>
+        <p>Yhdistää 2 tekstiä yhteen javascriptillä</p>
+<!-- HTML generated using hilite.me --><div style="background: #f0f0f0; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%">1
+  2
+  3
+  4</pre></td><td><pre style="margin: 0; line-height: 125%">      <span style="color: #062873; font-weight: bold">&lt;div</span> <span style="color: #4070a0">class=&quot;col-9 col-s-9&quot;</span><span style="color: #062873; font-weight: bold">&gt;</span>
+          <span style="color: #062873; font-weight: bold">&lt;p</span> <span style="color: #4070a0">id=&quot;koe10&quot;</span><span style="color: #062873; font-weight: bold">&gt;&lt;/p&gt;</span>
+          <span style="color: #062873; font-weight: bold">&lt;script&gt;</span>ex11();<span style="color: #062873; font-weight: bold">&lt;/script&gt;</span>
+        <span style="color: #062873; font-weight: bold">&lt;/div&gt;</span>
+  </pre></td></tr></table></div>
+<!-- HTML generated using hilite.me --><div style="background: #f0f0f0; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%">1
+  2
+  3
+  4
+  5</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #007020; font-weight: bold">function</span> ex11() {
+    <span style="color: #007020">document</span>.getElementById(<span style="color: #4070a0">&quot;koe10&quot;</span>).innerHTML <span style="color: #666666">=</span>
+      <span style="color: #4070a0">&quot;Netti boksi &lt;br&gt;&quot;</span> <span style="color: #666666">+</span> <span style="color: #007020">window</span>.koneMERKKI <span style="color: #666666">+</span> <span style="color: #4070a0">&quot; &quot;</span> <span style="color: #666666">+</span> price <span style="color: #666666">+</span> <span style="color: #4070a0">&quot;€&quot;</span>;
+  }
+  <span style="color: #007020">document</span>.addEventListener(<span style="color: #4070a0">&quot;contextmenu&quot;</span>, (event) <span style="color: #666666">=&gt;</span> event.preventDefault());
+  </pre></td></tr></table></div>
+  
+  
+        <p id="koe10"></p>
+        <script>ex11();</script>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>
+        This collection of beautiful and breathtaking photos is free for
+        personal and commercial use.
+      </p>
+    </div>
+  </body>
+</html>

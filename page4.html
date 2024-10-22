@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="button-image.css" />
+    <link rel="stylesheet" href="button.css" />
+    <link rel="stylesheet" href="page4.css" />
+    <title>Javascript 13</title>
+  </head>
+  <body>
+    <script src="js/automaticpages.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/exercises/13.js"></script>
+
+    <div class="header">
+      <div class="header-left"><h1>Javascript 13</h1></div>
+      <div class="header-right"><h1 id="header-clock">--:--:--</h1></div>
+      <script>
+        updateClock();
+      </script>
+    </div>
+
+    <div class="row">
+      <div class="col-3 col-s-3 menu">
+        <ul id="pages">
+          <a href="index.html"><li>Javascript 1-2</li></a>
+          <a href="page1.html"><li>Javascript 3-6</li></a>
+          <a href="page2.html"><li>Javascript 7-10</li></a>
+          <a href="page3.html"><li>Javascript 11-12</li></a>
+          <a href="page4.html"><li>Javascript 13</li></a>
+          <a href="page5.html"><li>Javascript 14-17</li></a>
+          <a href="page6.html"><li>Javascript 18</li></a>
+          <a href="page7.html"><li>Javascript 19</li></a>
+          <a href="page8.html"><li>Javascript 20</li></a>
+          <a href="page9.html"><li>Javascript 21</li></a>
+        </ul>
+      </div>
+      <div class="col-9 col-s-9">
+        <h1>Tehtävä 13a</h1>
+        <p>Noppa joka vaihtaa numeron</p>
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="
+            background: #f0f0f0;
+            overflow: auto;
+            width: auto;
+            border: solid gray;
+            border-width: 0.1em 0.1em 0.1em 0.8em;
+            padding: 0.2em 0.6em;
+          "
+        >
+          <table>
+            <tr>
+              <td>
+                <pre style="margin: 0; line-height: 125%">
+  1
+  2
+  3</pre
+                >
+              </td>
+              <td>
+                <pre
+                  style="margin: 0; line-height: 125%"
+                >        <span style="color: #062873; font-weight: bold">&lt;div</span> <span style="color: #4070a0">class=&quot;col-9 col-s-9&quot;</span><span style="color: #062873; font-weight: bold">&gt;</span>
+            <span style="color: #062873; font-weight: bold">&lt;div</span> <span style="color: #4070a0">id=&quot;box&quot;</span> <span style="color: #4070a0">onmousedown=&quot;ex14(event)&quot;</span><span style="color: #062873; font-weight: bold">&gt;&lt;h1&gt;</span>1<span style="color: #062873; font-weight: bold">&lt;/h1&gt;&lt;/div&gt;</span>
+          <span style="color: #062873; font-weight: bold">&lt;/div&gt;</span>
+  </pre>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="
+            background: #f0f0f0;
+            overflow: auto;
+            width: auto;
+            border: solid gray;
+            border-width: 0.1em 0.1em 0.1em 0.8em;
+            padding: 0.2em 0.6em;
+          "
+        >
+          <table>
+            <tr>
+              <td>
+                <pre style="margin: 0; line-height: 125%">
+ 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13</pre
+                >
+              </td>
+              <td>
+                <pre
+                  style="margin: 0; line-height: 125%"
+                ><span style="color: #007020">document</span>.addEventListener(<span style="color: #4070a0">&quot;contextmenu&quot;</span>, (event) <span style="color: #666666">=&gt;</span> event.preventDefault());
+
+<span style="color: #007020; font-weight: bold">function</span> random(min, max) {
+  <span style="color: #007020; font-weight: bold">return</span> <span style="color: #007020">Math</span>.floor(<span style="color: #007020">Math</span>.random() <span style="color: #666666">*</span> (max <span style="color: #666666">-</span> min <span style="color: #666666">+</span> <span style="color: #40a070">1</span>)) <span style="color: #666666">+</span> min;
+}
+
+<span style="color: #007020; font-weight: bold">function</span> ex14(event) {
+  box.innerHTML <span style="color: #666666">=</span> <span style="color: #4070a0">&quot;&lt;h1&gt;&quot;</span> <span style="color: #666666">+</span> random(<span style="color: #40a070">1</span>, <span style="color: #40a070">6</span>) <span style="color: #666666">+</span> <span style="color: #4070a0">&quot;&lt;/h1&gt;&quot;</span>;
+  box.style.backgroundColor <span style="color: #666666">=</span> <span style="border: 1px solid #FF0000">`</span>rgb(${random(<span style="color: #40a070">0</span>, <span style="color: #40a070">255</span>)}, ${random(
+    <span style="color: #40a070">0</span>,
+    <span style="color: #40a070">255</span>
+  )}, ${random(<span style="color: #40a070">0</span>, <span style="color: #40a070">255</span>)})<span style="border: 1px solid #FF0000">`</span>;
+}
+</pre>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <div id="box" onmousedown="ex14(event)"><h1>1</h1></div>
+      </div>
+      <div class="col-3 col-s-3"></div>
+      <div class="col-9 col-s-9">
+        <h1>Tehtävä 13b</h1>
+        <p>Noppa joka vaihtaa kuvan</p>
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="
+            background: #f0f0f0;
+            overflow: auto;
+            width: auto;
+            border: solid gray;
+            border-width: 0.1em 0.1em 0.1em 0.8em;
+            padding: 0.2em 0.6em;
+          "
+        >
+          <table>
+            <tr>
+              <td>
+                <pre style="margin: 0; line-height: 125%">
+1
+  2
+  3
+  4
+  5</pre
+                >
+              </td>
+              <td>
+                <pre
+                  style="margin: 0; line-height: 125%"
+                >      <span style="color: #062873; font-weight: bold">&lt;div</span> <span style="color: #4070a0">class=&quot;col-9 col-s-9&quot;</span><span style="color: #062873; font-weight: bold">&gt;</span>
+          <span style="color: #062873; font-weight: bold">&lt;div</span> <span style="color: #4070a0">id=&quot;box2&quot;</span> <span style="color: #4070a0">onmousedown=&quot;ex14b(event)&quot;</span><span style="color: #062873; font-weight: bold">&gt;</span>
+            <span style="color: #062873; font-weight: bold">&lt;img</span> <span style="color: #4070a0">id=&quot;dice&quot;</span> <span style="color: #4070a0">src=&quot;dice/1.png&quot;</span> <span style="color: #062873; font-weight: bold">/&gt;</span>
+          <span style="color: #062873; font-weight: bold">&lt;/div&gt;</span>
+        <span style="color: #062873; font-weight: bold">&lt;/div&gt;</span>
+  </pre>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="
+            background: #f0f0f0;
+            overflow: auto;
+            width: auto;
+            border: solid gray;
+            border-width: 0.1em 0.1em 0.1em 0.8em;
+            padding: 0.2em 0.6em;
+          "
+        >
+          <table>
+            <tr>
+              <td>
+                <pre style="margin: 0; line-height: 125%">
+ 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10</pre
+                >
+              </td>
+              <td>
+                <pre
+                  style="margin: 0; line-height: 125%"
+                ><span style="color: #007020">document</span>.addEventListener(<span style="color: #4070a0">&quot;contextmenu&quot;</span>, (event) <span style="color: #666666">=&gt;</span> event.preventDefault());
+
+<span style="color: #007020; font-weight: bold">function</span> random(min, max) {
+  <span style="color: #007020; font-weight: bold">return</span> <span style="color: #007020">Math</span>.floor(<span style="color: #007020">Math</span>.random() <span style="color: #666666">*</span> (max <span style="color: #666666">-</span> min <span style="color: #666666">+</span> <span style="color: #40a070">1</span>)) <span style="color: #666666">+</span> min;
+}
+<span style="color: #007020; font-weight: bold">function</span> ex14b(event) {
+  <span style="color: #007020; font-weight: bold">const</span> dice <span style="color: #666666">=</span> <span style="color: #007020">document</span>.getElementById(<span style="color: #4070a0">&quot;dice&quot;</span>);
+  <span style="color: #007020; font-weight: bold">const</span> side <span style="color: #666666">=</span> random(<span style="color: #40a070">1</span>, <span style="color: #40a070">6</span>);
+  dice.src <span style="color: #666666">=</span> <span style="color: #4070a0">&quot;dice/&quot;</span> <span style="color: #666666">+</span> side <span style="color: #666666">+</span> <span style="color: #4070a0">&quot;.png&quot;</span>;
+}
+</pre>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <div id="box2" onmousedown="ex14b(event)">
+          <img id="dice" src="dice/1.png" />
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>
+        This collection of beautiful and breathtaking photos is free for
+        personal and commercial use.
+      </p>
+    </div>
+  </body>
+</html>

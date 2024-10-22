@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="button-image.css" />
+    <link rel="stylesheet" href="button.css" />
+    <link rel="stylesheet" href="page5.css" />
+    <title>Javascript 14-17</title>
+  </head>
+  <body>
+    <script src="js/automaticpages.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/exercises/14-17.js"></script>
+
+    <div class="header">
+      <div class="header-left"><h1>Javascript 14-17</h1></div>
+      <div class="header-right"><h1 id="header-clock">--:--:--</h1></div>
+      <script>
+        updateClock();
+      </script>
+    </div>
+
+    <div class="row">
+      <div class="col-3 col-s-3 menu">
+        <ul id="pages">
+          <a href="index.html"><li>Javascript 1-2</li></a>
+          <a href="page1.html"><li>Javascript 3-6</li></a>
+          <a href="page2.html"><li>Javascript 7-10</li></a>
+          <a href="page3.html"><li>Javascript 11-12</li></a>
+          <a href="page4.html"><li>Javascript 13</li></a>
+          <a href="page5.html"><li>Javascript 14-17</li></a>
+          <a href="page6.html"><li>Javascript 18</li></a>
+          <a href="page7.html"><li>Javascript 19</li></a>
+          <a href="page8.html"><li>Javascript 20</li></a>
+          <a href="page9.html"><li>Javascript 21</li></a>
+        </ul>
+      </div>
+      <div>
+        <h1>Tehtävä 14</h1>
+        <p>Näyttää kellon ajan, päivän, kuukauden, päivämäärän, vuoden</p>
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="
+            background: #f0f0f0;
+            overflow: auto;
+            width: auto;
+            border: solid gray;
+            border-width: 0.1em 0.1em 0.1em 0.8em;
+            padding: 0.2em 0.6em;
+          "
+        >
+          <table>
+            <tr>
+              <td>
+                <pre style="margin: 0; line-height: 125%">
+1
+2
+3
+4
+5
+6</pre
+                >
+              </td>
+              <td>
+                <pre
+                  style="margin: 0; line-height: 125%"
+                >      <span style="color: #062873; font-weight: bold">&lt;div</span> <span style="color: #4070a0">class=&quot;col-9 col-s-9&quot;</span><span style="color: #062873; font-weight: bold">&gt;</span>
+        <span style="color: #062873; font-weight: bold">&lt;h1</span> <span style="color: #4070a0">id=&quot;aika&quot;</span><span style="color: #062873; font-weight: bold">&gt;</span>A<span style="color: #062873; font-weight: bold">&lt;/h1&gt;</span>
+      <span style="color: #062873; font-weight: bold">&lt;/div&gt;</span>
+      <span style="color: #062873; font-weight: bold">&lt;script&gt;</span>
+        ex15();
+      <span style="color: #062873; font-weight: bold">&lt;/script&gt;</span>
+</pre>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="
+            background: #f0f0f0;
+            overflow: auto;
+            width: auto;
+            border: solid gray;
+            border-width: 0.1em 0.1em 0.1em 0.8em;
+            padding: 0.2em 0.6em;
+          "
+        >
+          <table>
+            <tr>
+              <td>
+                <pre style="margin: 0; line-height: 125%">
+ 1
+  2
+  3
+  4
+  5
+  6
+  7
+  8
+  9
+ 10
+ 11
+ 12
+ 13
+ 14
+ 15
+ 16
+ 17
+ 18
+ 19
+ 20
+ 21
+ 22
+ 23
+ 24
+ 25
+ 26
+ 27
+ 28
+ 29
+ 30
+ 31
+ 32
+ 33
+ 34
+ 35
+ 36
+ 37
+ 38</pre
+                >
+              </td>
+              <td>
+                <pre
+                  style="margin: 0; line-height: 125%"
+                ><span style="color: #007020; font-weight: bold">function</span> ex15() {
+   <span style="color: #007020; font-weight: bold">var</span> time <span style="color: #666666">=</span> <span style="color: #007020; font-weight: bold">new</span> <span style="color: #007020">Date</span>();
+   <span style="color: #007020; font-weight: bold">var</span> day <span style="color: #666666">=</span> [
+     <span style="color: #4070a0">&quot;Sunnuntai&quot;</span>,
+     <span style="color: #4070a0">&quot;Maanantai&quot;</span>,
+     <span style="color: #4070a0">&quot;Tiistai&quot;</span>,
+     <span style="color: #4070a0">&quot;Keskiviikko&quot;</span>,
+     <span style="color: #4070a0">&quot;Torstai&quot;</span>,
+     <span style="color: #4070a0">&quot;Perjantai&quot;</span>,
+     <span style="color: #4070a0">&quot;Lauantai&quot;</span>,
+   ];
+   <span style="color: #007020; font-weight: bold">var</span> month <span style="color: #666666">=</span> [
+     <span style="color: #4070a0">&quot;Tammikuu&quot;</span>,
+     <span style="color: #4070a0">&quot;Helmikuu&quot;</span>,
+     <span style="color: #4070a0">&quot;Maaliskuu&quot;</span>,
+     <span style="color: #4070a0">&quot;Huhtikuu&quot;</span>,
+     <span style="color: #4070a0">&quot;Toukokuu&quot;</span>,
+     <span style="color: #4070a0">&quot;Kesäkuu&quot;</span>,
+     <span style="color: #4070a0">&quot;Heinäkuu&quot;</span>,
+     <span style="color: #4070a0">&quot;Elokuu&quot;</span>,
+     <span style="color: #4070a0">&quot;Syyskuu&quot;</span>,
+     <span style="color: #4070a0">&quot;Lokakuu&quot;</span>,
+     <span style="color: #4070a0">&quot;Marraskuu&quot;</span>,
+     <span style="color: #4070a0">&quot;Joulukuu&quot;</span>,
+   ];
+   <span style="color: #007020">document</span>.getElementById(<span style="color: #4070a0">&quot;aika&quot;</span>).innerHTML <span style="color: #666666">=</span>
+     day[time.getDay()] <span style="color: #666666">+</span>
+     <span style="color: #4070a0">&quot;, &quot;</span> <span style="color: #666666">+</span>
+     time.getDate() <span style="color: #666666">+</span>
+     <span style="color: #4070a0">&quot;. &quot;</span> <span style="color: #666666">+</span>
+     month[time.getMonth()] <span style="color: #666666">+</span>
+     <span style="color: #4070a0">&quot; &quot;</span> <span style="color: #666666">+</span>
+     time.getFullYear() <span style="color: #666666">+</span>
+     <span style="color: #4070a0">&quot; klo &quot;</span> <span style="color: #666666">+</span>
+     time.getHours() <span style="color: #666666">+</span>
+     <span style="color: #4070a0">&quot;:&quot;</span> <span style="color: #666666">+</span>
+     time.getMinutes();
+ }
+ </pre>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="col-3 col-s-3"></div>
+      <div class="col-9 col-s-9">
+        <h1 id="aika">A</h1>
+        <script>
+          ex15();
+        </script>
+      </div>
+      <div class="col-3 col-s-3"></div>
+      <div class="col-9 col-s-9">
+        <h1>Tehtävä 16</h1>
+        <p>
+          Laittaa kellon oikeaan reunaan sivua ja päivittää kellon 500ms välein
+        </p>
+      </div>
+      <div class="col-3 col-s-3"></div>
+      <div class="col-9 col-s-9">
+        <h1>Tehtävä 17</h1>
+        <p>Avaa teksti laatikon kolmen sekunnin kuluttua napin painamisesta.</p>
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="
+            background: #f0f0f0;
+            overflow: auto;
+            width: auto;
+            border: solid gray;
+            border-width: 0.1em 0.1em 0.1em 0.8em;
+            padding: 0.2em 0.6em;
+          "
+        >
+          <table>
+            <tr>
+              <td>
+                <pre style="margin: 0; line-height: 125%">
+1
+  2
+  3
+  4</pre
+                >
+              </td>
+              <td>
+                <pre
+                  style="margin: 0; line-height: 125%"
+                >      <span style="color: #062873; font-weight: bold">&lt;div</span> <span style="color: #4070a0">class=&quot;col-9 col-s-9&quot;</span><span style="color: #062873; font-weight: bold">&gt;</span>
+          <span style="color: #062873; font-weight: bold">&lt;button</span> <span style="color: #4070a0">class=&quot;button-small&quot;</span> <span style="color: #4070a0">onclick=&quot;ex16()&quot;</span><span style="color: #062873; font-weight: bold">&gt;</span>Button<span style="color: #062873; font-weight: bold">&lt;/button&gt;</span>
+          <span style="color: #062873; font-weight: bold">&lt;div</span> <span style="color: #4070a0">class=&quot;text-box&quot;</span> <span style="color: #4070a0">id=&quot;text-box&quot;</span><span style="color: #062873; font-weight: bold">&gt;</span>TEKSTI LAATIKKO<span style="color: #062873; font-weight: bold">&lt;/div&gt;</span>
+        <span style="color: #062873; font-weight: bold">&lt;/div&gt;</span>
+  </pre>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <!-- HTML generated using hilite.me -->
+        <div
+          style="
+            background: #f0f0f0;
+            overflow: auto;
+            width: auto;
+            border: solid gray;
+            border-width: 0.1em 0.1em 0.1em 0.8em;
+            padding: 0.2em 0.6em;
+          "
+        >
+          <table>
+            <tr>
+              <td>
+                <pre style="margin: 0; line-height: 125%">
+1
+  2
+  3
+  4
+  5
+  6</pre
+                >
+              </td>
+              <td>
+                <pre
+                  style="margin: 0; line-height: 125%"
+                ><span style="color: #007020; font-weight: bold">function</span> ex17() {
+    setTimeout(ex16b, <span style="color: #40a070">3000</span>);
+  }
+  <span style="color: #007020; font-weight: bold">function</span> ex17b() {
+    <span style="color: #007020">document</span>.getElementById(<span style="color: #4070a0">&quot;text-box&quot;</span>).style.visibility <span style="color: #666666">=</span> <span style="color: #4070a0">&quot;visible&quot;</span>;
+  }
+  </pre>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <button class="button-small" onclick="ex17()">
+          AVAA TEKSTI LAATIKKO
+        </button>
+        <div class="text-box" id="text-box">TEKSTI LAATIKKO</div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>
+        This collection of beautiful and breathtaking photos is free for
+        personal and commercial use.
+      </p>
+    </div>
+  </body>
+</html>
